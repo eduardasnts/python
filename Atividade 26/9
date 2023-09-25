@@ -1,0 +1,189 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOZ2JvJS5ZS9WHVkF4hZuKd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/eduardasnts/python/blob/main/Atividade%2026/9\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e0eN9_O5fYzK",
+        "outputId": "3064ec48-3597-4f51-ce1a-9becc6f18219"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Soma: 15\n",
+            "Subtração: 5\n",
+            "Multiplicação: 50\n",
+            "Divisão: 2.0\n",
+            "Resto da divisão: 0\n",
+            "Potência: 100000\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = 10\n",
+        "b = 5\n",
+        "\n",
+        "soma = a + b\n",
+        "subtracao = a - b\n",
+        "multiplicacao = a * b\n",
+        "divisao = a / b\n",
+        "resto = a % b\n",
+        "potencia = a ** b\n",
+        "\n",
+        "print(\"Soma:\", soma)\n",
+        "print(\"Subtração:\", subtracao)\n",
+        "print(\"Multiplicação:\", multiplicacao)\n",
+        "print(\"Divisão:\", divisao)\n",
+        "print(\"Resto da divisão:\", resto)\n",
+        "print(\"Potência:\", potencia)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10\n",
+        "y = 5\n",
+        "\n",
+        "igual = x == y\n",
+        "diferente = x != y\n",
+        "menor_que = x < y\n",
+        "maior_que = x > y\n",
+        "menor_ou_igual = x <= y\n",
+        "maior_ou_igual = x >= y\n",
+        "\n",
+        "print(\"Igual a:\", igual)\n",
+        "print(\"Diferente de:\", diferente)\n",
+        "print(\"Menor que:\", menor_que)\n",
+        "print(\"Maior que:\", maior_que)\n",
+        "print(\"Menor ou igual a:\", menor_ou_igual)\n",
+        "print(\"Maior ou igual a:\", maior_ou_igual)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1VrEyiWoff3W",
+        "outputId": "f5acc85d-81de-4ce2-c048-5241eee2936b"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Igual a: False\n",
+            "Diferente de: True\n",
+            "Menor que: False\n",
+            "Maior que: True\n",
+            "Menor ou igual a: False\n",
+            "Maior ou igual a: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 10\n",
+        "b = 5\n",
+        "c = 15\n",
+        "\n",
+        "# Exemplo com operador 'and'\n",
+        "resultado_and = (a > b) and (b < c)\n",
+        "\n",
+        "# Exemplo com operador 'or'\n",
+        "resultado_or = (a < b) or (b < c)\n",
+        "\n",
+        "# Exemplo com operador 'not'\n",
+        "resultado_not = not (a < b)\n",
+        "\n",
+        "print(\"Resultado AND:\", resultado_and)\n",
+        "print(\"Resultado OR:\", resultado_or)\n",
+        "print(\"Resultado NOT:\", resultado_not)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-6lp2TS4fpx_",
+        "outputId": "fdc662ee-49c5-48e2-c19a-cd27d8bb4c94"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Resultado AND: True\n",
+            "Resultado OR: True\n",
+            "Resultado NOT: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade_str = input(\"Digite sua idade: \")\n",
+        "idade_int = int(idade_str)  # Converte a entrada para um número inteiro\n",
+        "\n",
+        "altura_str = input(\"Digite sua altura (em metros): \")\n",
+        "altura_float = float(altura_str)  # Converte a entrada para um número de ponto flutuante\n",
+        "\n",
+        "print(\"Idade:\", idade_int)\n",
+        "print(\"Altura:\", altura_float)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fF0vOthcft2H",
+        "outputId": "95fff02a-3c38-4503-efa5-11e8b45fcd84"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 23\n",
+            "Digite sua altura (em metros): 1.71\n",
+            "Idade: 23\n",
+            "Altura: 1.71\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
